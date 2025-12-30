@@ -34,3 +34,27 @@ This project has a frontend developed with Flutter and a backend API built with 
  </td>
  </tr> 
 </table>
+
+
+---
+
+## Configuration
+
+### Database Connection String
+
+Update the connection string in `appsettings.json`:
+
+```json
+{
+  "ConnectionStrings": {
+    "DbConnectionString": "Server=YOUR_SERVER\\SQLEXPRESS;Database=WebApiDb;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=true"
+  }
+}
+```
+## Migration
+### Run the following commands in Package Manager Console:
+Add-Migration InitialCreate
+Update-Database
+
+## Swagger API Documentation
+http://localhost:5206/swagger
