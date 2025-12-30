@@ -34,7 +34,8 @@ This project has a frontend developed with Flutter and a backend API built with 
  </td>
  </tr> 
 </table>
-![Uploading ShaviRajapaksha-github-profile-portrait.png…]()
+<img width="1080" height="1943" alt="ShaviRajapaksha-github-profile-portrait" src="https://github.com/user-attachments/assets/137d6d4d-fd95-418e-9399-dd17c57bbaec" />
+
 
 
 ---
