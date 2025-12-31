@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:frontend_ui/api_handler.dart';
+import 'package:frontend_ui/edit_page.dart';
 
 import 'model.dart';
 
@@ -43,6 +44,7 @@ class _MMainPageState extends State<MainPage> {
       body: Column(
         children: [ListView.builder(shrinkWrap: true, itemCount: 10, itemBuilder: (context, int index){
           return ListTile(
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => EditPage(user: data[index]),),),
             leading: Text('${data[index].userId}'),
             title: Text(data[index].name),
             subtitle: Text(data[index].address),
