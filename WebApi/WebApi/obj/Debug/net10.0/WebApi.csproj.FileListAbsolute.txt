@@ -272,7 +272,6 @@ G:\Projects\Flutter-App-With-Asp.Net-Core-Web-API-As-Backend\WebApi\WebApi\obj\D
 G:\Projects\Flutter-App-With-Asp.Net-Core-Web-API-As-Backend\WebApi\WebApi\obj\Debug\net10.0\staticwebassets.development.json
 G:\Projects\Flutter-App-With-Asp.Net-Core-Web-API-As-Backend\WebApi\WebApi\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 G:\Projects\Flutter-App-With-Asp.Net-Core-Web-API-As-Backend\WebApi\WebApi\obj\Debug\net10.0\swae.build.ex.cache
-G:\Projects\Flutter-App-With-Asp.Net-Core-Web-API-As-Backend\WebApi\WebApi\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 G:\Projects\Flutter-App-With-Asp.Net-Core-Web-API-As-Backend\WebApi\WebApi\obj\Debug\net10.0\WebApi.csproj.Up2Date
 G:\Projects\Flutter-App-With-Asp.Net-Core-Web-API-As-Backend\WebApi\WebApi\obj\Debug\net10.0\WebApi.dll
 G:\Projects\Flutter-App-With-Asp.Net-Core-Web-API-As-Backend\WebApi\WebApi\obj\Debug\net10.0\refint\WebApi.dll
