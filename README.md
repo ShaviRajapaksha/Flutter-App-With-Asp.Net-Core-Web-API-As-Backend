@@ -7,7 +7,7 @@ This project has a frontend developed with Flutter and a backend API built with 
 - Dart
   
 ## Backend Technologies
-- ASP.NET Core Web API (.NET 8)  
+- ASP.NET Core Web API 
 - Entity Framework Core  
 - SQL Server / SQL Server Express  
 - Swagger (OpenAPI)  
