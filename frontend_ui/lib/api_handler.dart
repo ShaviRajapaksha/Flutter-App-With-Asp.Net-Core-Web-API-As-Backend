@@ -13,7 +13,7 @@ class ApiHandler {
     try {
       final response = await http.get(
         uri,
-        headers: {"Content-Type": "application/jsonl;charset=UTF-8"},
+        headers: {"Content-Type": "application/json; charset=UTF-8"},
       );
       if (response.statusCode == 200) {
         final List<dynamic> jsonData = json.decode(response.body);
