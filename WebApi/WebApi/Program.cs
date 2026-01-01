@@ -3,13 +3,27 @@ using WebApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Controllers
 builder.Services.AddControllers();
 
-// ? Swagger
+// CORS (ADD THIS)
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFlutter",
+        policy =>
+        {
+            policy
+                .AllowAnyOrigin()
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});
+
+// Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// DB
+// Database
 builder.Services.AddDbContext<ApiDbContext>(options =>
     options.UseSqlServer(
         builder.Configuration.GetConnectionString("DbConnectionString")
@@ -24,7 +38,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+//  ORDER IS IMPORTANT
+app.UseCors("AllowFlutter");
+
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
+
 app.Run();
