@@ -39,6 +39,14 @@ This project has a frontend developed with Flutter and a backend API built with 
  </tr> 
 </table>
 
+## Flutter UI Screenshots
+<table>
+ <tr>
+ <td>
+<img height="500" alt="image" src="https://github.com/user-attachments/assets/92a373b3-b6d5-4af7-b4bf-904aa2c25646" />
+ </td>
+ </tr>
+</table>
 
 ---
 
