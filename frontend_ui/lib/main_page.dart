@@ -8,23 +8,24 @@ class MainPage extends StatefulWidget {
   const MainPage({super.key});
 
   @override
-  State<MainPage> createState() => _MMainPageState();
+  State<MainPage> createState() => _MainPageState();
 }
 
-class _MMainPageState extends State<MainPage> {
+class _MainPageState extends State<MainPage> {
   ApiHandler apiHandler = ApiHandler();
+  late List<User> data = [];
 
   void getData() async {
     data = await apiHandler.getUserData();
     setState(() {});
   }
+  
   @override
   void initState() {
-    super.initState();
     getData();
+    super.initState();
   }
 
-  late List<User> data = [];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,7 +43,7 @@ class _MMainPageState extends State<MainPage> {
         child: const Text('Get Data'),
       ),
       body: Column(
-        children: [ListView.builder(shrinkWrap: true, itemCount: 10, itemBuilder: (context, int index){
+        children: [ListView.builder(shrinkWrap: true, itemCount: data.length, itemBuilder: (BuildContext context, int index){
           return ListTile(
             onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => EditPage(user: data[index]),),),
             leading: Text('${data[index].userId}'),
