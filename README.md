@@ -2,6 +2,10 @@
 
 This project has a frontend developed with Flutter and a backend API built with ASP.NET Core Web API, Entity Framework Core, and SQL Server. It provides CRUD operations for managing users.
 
+## Frontend Technology
+- Flutter
+- Dart
+  
 ## Backend Technologies
 - ASP.NET Core Web API (.NET 8)  
 - Entity Framework Core  
